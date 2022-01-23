@@ -7,8 +7,7 @@ function timeTracker() {
     //get current number of hours.
     var timeNow = moment().hour();
 
-    timeNow =17; //TO DO REMOVE LINE
-
+    //loops through time blocks
     $(".time-block").each(function() {
         var blockTime = parseInt($(this).attr("id").split("hour")[1])
 
