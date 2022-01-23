@@ -36,6 +36,10 @@ function timeTracker() {
 
 
 
+/* still to do -
+FIX time block colors appearing
+Add local storage for text areas 
+Add comments throughout 
 
 
 
