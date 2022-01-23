@@ -1,3 +1,15 @@
+var todayDate = moment().format('dddd, MMM Do YYYY');
+$("#currentDay").html(todayDate);
+
+
+function timeTracker() {
+    //get current number of hours.
+    var timeNow = moment().hour();
+
+    timeNow =17; //TO DO REMOVE LINE
+}
+
+
 
 /*
 GIVEN I am using a daily planner to create a schedule
@@ -14,4 +26,5 @@ THEN the text for that event is saved in local storage
 WHEN I refresh the page
 THEN the saved events persist
 */
+
 
