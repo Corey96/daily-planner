@@ -70,32 +70,6 @@ textarea {
   transition: all 0.3s ease-in-out;
 }
 
-/*
-.container #timeStart {
-  display: grid;
-  grid-gap: 0.2rem;
-  grid-template-columns: 5rem repeat(4 1fr);
-  grid-template-rows: repeat(28, 1fr);
-  grid-template-areas: 
-  "time800 stage stage stage stage"
-  "time830 stage stage stage stage"
-  "time900 stage stage stage stage"
-  "time930 stage stage stage stage"
-  "time1000 stage stage stage stage"
-  "time1030 stage stage stage stage"
-  "time1100 stage stage stage stage"
-  "time1130 stage stage stage stage"
-  "time1200 stage stage stage stage"
-  "time1230 stage stage stage stage"
-  "time1300 stage stage stage stage"
-  "time1330 stage stage stage stage"
-  "time1400 stage stage stage stage"
-  "time1430 stage stage stage stage"
-  "time1500 stage stage stage stage"
-  "time1530 stage stage stage stage"
-  "time1600 stage stage stage stage"
-  "time1630 stage stage stage stage"
-  "time1700 stage stage stage stage";
-} */
+
 
 

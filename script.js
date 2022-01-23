@@ -9,7 +9,8 @@ function timeTracker() {
 
     //loops through time blocks
     $(".time-block").each(function() {
-        var blockTime = parseInt($(this).attr("id").split("hour")[1])
+        var blockTime = parseInt($(this).attr("id").split("hour")[1]);
+
 
         if (blockTime < timeNow) {
             $(this).removeClass("future");
@@ -39,11 +40,12 @@ function timeTracker() {
 /* still to do -
 FIX time block colors appearing
 Add local storage for text areas 
-Add comments throughout 
+Add comments throughout
+Make readME 
 
 
 
-
+*/
 
 
 
