@@ -28,12 +28,41 @@ function timeTracker() {
             $(this).addClass("future");
 
         }
-    
-    })
+     })}
 
-}
-
+    // initial render of past/present/future colours
     timeTracker();
+
+    // rerun every minute so it updates throughout the day
+    setInterval(timeTracker, 60000);  
+
+// Saving user inout to local storage
+let inputArray = $('input');
+let inputValues = [];
+
+function saveInput(e) {
+    // save button goes on save
+    $(e.target).css('display', 'none');
+    inputValues = [];
+    for (let i = 0; i < inputArray.length; i++) {
+        inputValues.push(inputArray[i].value);
+        localStorage.setItem("timeInputs", JSON.stringify(inputValues));
+    }}
+
+// Local storage
+if (localStorage.getItem("timeInputs") == null) {
+    inputValues = [];
+    for (let i = 0; i < inputArray.length; i++) {
+      inputValues.push(inputArray[i].value);
+      localStorage.setItem("timeInputs", JSON.stringify(inputValues));
+    }
+  }
+  renderInputs();
+  function renderInputs() {
+    for (let i = 0; i < inputArray.length; i++) {
+      inputArray[i].value = JSON.parse(localStorage.getItem("timeInputs"))[i];
+    }
+  }
 
 
 
