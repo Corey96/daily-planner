@@ -70,6 +70,19 @@ for (let button of buttons) {
   $(button).click(saveInput);
 }
 
+// save button appears when input is changed
+for (let i = 0; i < inputArray.length; i++) {
+    $(inputArray[i]).on("input", function (e) {
+      $(e.target)
+        .parent()
+        .parent()
+        .children()
+        .eq(1)
+        .children()
+        .eq(0)
+        .css("display", "block");
+    });
+  }
 
 /* still to do -
 FIX time block colors appearing
