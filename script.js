@@ -64,6 +64,11 @@ if (localStorage.getItem("timeInputs") == null) {
     }
   }
 
+//save user inputs on save buttons
+const buttons = $("button");
+for (let button of buttons) {
+  $(button).click(saveInput);
+}
 
 
 /* still to do -
